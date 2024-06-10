@@ -6,16 +6,15 @@
 ### Project Description:
 
 #### Motivation: 
-When searching for new restaurants and services, yelp users often have to use a trial-and-error approach to find one that fits their desires. They have to search through numerous options and read through several reviews per option to determine if it is a good fit. This process is a brute-force approach and often does not result in an optimal match. We propose a more convenient solution, by recommending restaurants and services that will best match the user's preferences. This is an application of ML on customer reviews and will employ some NLP. 
+Yelp is a widely used platform designed to recommend businesses and services, ranging from restaurants to nail salons. Despite its popularity, the platform can be cumbersome to use. Searching for new restaurants and services can be tedious and time consuming for yelp users. They must search numerous options and read multiple reviews per option to determine if it is a good fit.
+Here we use machine learning techniques to perform 3 experiments:
 
-#### Method: 
-We first plan to apply NLP on customer reviews to identify key characteristics of each location (price, quality, service, ambiance, etc). We will use these keywords to generate a summary about each location, so that a user can get a general sense of how that restaurant/service is, without having to read several reviews. 
+1. predict the star rating of a restaurant based on a set of reviews
+2. recommend a restaurant to a user based on their star ratings
+3. explore the potential of OpenAI in performing these tasks.
 
-Finally, we will repeat this tagging process on the user's own review history. Based on tags that often appear in one’s history, we will recommend new restaurants/locations that fit a similar profile. 
-We will test a variety of ML models that will help us predict which restaurants will be a good fit. We will likely begin with simple logistic regression classifiers (good or bad ratings based on the fit). We will also explore linear regression models to generate probabilities of how likely something is to be a good fit. As mentioned above, we will also be using NLP throughout this project in order to process the review text into keywords. 
 
-#### Intended Experiments: 
-we plan to test our prediction process using synthetic reviews. We will create fake Yelp profiles with a history of Yelp reviews and will evaluate the model's success based on how many new restaurants/services are recommended, and how well of a fit they are. This ‘fit’ metric is inherently subjective, but we anticipate that the NLP tags generated will correspond well with our human-generated keywords. 
+Our full results are detailed in the final report, uploaded as a pdf on this repository. You can also get an overview of this project through our research poster, presented at the Stanford Department of Computer Science Machine Learning Research Convention. 
 
 #### Dataset: 
 We will use the following Yelp dataset available as JSON files. This dataset is a subset of businesses, reviews, and user data as follows
